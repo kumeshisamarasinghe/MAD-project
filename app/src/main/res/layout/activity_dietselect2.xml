@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/im8"
+    android:orientation="vertical"
+    tools:context=".dietselect2">
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:text="Age between 30-50 Diet Plan"
+    android:textColor="#311268"
+    android:textSize="28dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:text="Breakfast"
+    android:textColor="#CC2121"
+    android:textSize="25dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:text=" Berry Smoothie"
+    android:textColor="#050505"
+    android:textSize="17dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:text="Grapes or Nuts"
+    android:textColor="#050505"
+    android:textSize="17dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:text="Lunch"
+    android:textColor="#CC2121"
+    android:textSize="25dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:text="Turkey Sandwich"
+    android:textColor="#050505"
+    android:textSize="17dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:text="Pear and Popcorn"
+    android:textColor="#050505"
+    android:textSize="17dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:text="Dinner"
+    android:textColor="#CC2121"
+    android:textSize="25dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:text="Grilled Chicken and Veggies"
+    android:textColor="#050505"
+    android:textSize="17dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:text=" Egg White Omelet"
+    android:textColor="#050505"
+    android:textSize="17dp" />
+
+<Button
+    android:id="@+id/backd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:text="Back"
+    android:textSize="30dp" />
+
+</LinearLayout>
