@@ -1,6 +1,7 @@
 package com.example.homepage;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,6 +23,7 @@ public class CalorieCalculator extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculator_calorie);
 
+        //get the values to the variables
         height = findViewById(R.id.height);
         weight = findViewById(R.id.weight);
         age = findViewById(R.id.age);
@@ -35,11 +37,31 @@ public class CalorieCalculator extends AppCompatActivity {
             String H = height.getText().toString();
             String A = age.getText().toString();
 
+            //do validations
+            if(TextUtils.isEmpty(A)){
+                age.setError("Please enter your age");
+                age.requestFocus();
+                return;
+            }
+
+            if(TextUtils.isEmpty(W)){
+                weight.setError("Please enter your weight");
+                weight.requestFocus();
+                return;
+            }
+
+            if(TextUtils.isEmpty(H)){
+                height.setError("Please enter your height");
+                height.requestFocus();
+                return;
+            }
+
+            //get the values
             float weightValue = Float.parseFloat(W);
             float heightValue = Float.parseFloat(H);
             float ageValue = Float.parseFloat(A);
 
-            //float calorie = weightValue / (heightValue * heightValue);
+            //calculation to get calorie amount
             float calorie = (float) (((10 * weightValue) + (6.25 * heightValue) - (5 * ageValue)  - 161) * 1.2);
 
             calculation =  "Result:\n\n " + calorie + "\n" + "calories";
