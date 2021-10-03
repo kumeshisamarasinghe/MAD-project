@@ -76,30 +76,12 @@
         android:inputType="text"
         android:textSize="24dp" />
 
-    <TextView
-        android:id="@+id/a"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:layout_below="@+id/height"
-        android:text="Your activity state" />
-
-    <EditText
-        android:id="@+id/state"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/a"
-        android:background="@drawable/edit_bg"
-        android:layout_marginHorizontal="30dp"
-        android:padding="7dp"
-        android:inputType="text"
-        android:textSize="24dp" />
 
     <Button
         android:id="@+id/btnInsertd"
         android:layout_width="194dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/state"
+        android:layout_below="@id/height"
         android:layout_marginHorizontal="130dp"
         android:text="Insert"
         android:textSize="20dp"
